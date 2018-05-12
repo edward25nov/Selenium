@@ -18,7 +18,7 @@ public class Training {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		findbyClass();
+		CasesVarious.caseCombobox();
 	}
 	
 	public static void findbyName() 

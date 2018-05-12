@@ -13,4 +13,10 @@ public class Endpoints {
 	public static String byCss = "http://testing.todvachev.com/selectors/css-path/";
 	public static String byClass = "http://testing.todvachev.com/selectors/class-name/";
 	
+	public static String combobox = "http://testing.todvachev.com/special-elements/drop-down-menu-test/";
+	
+	public static String login = "http://testing.todvachev.com/test-scenarios/login-form/";
+	
+	
+	
 }
