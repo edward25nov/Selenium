@@ -66,7 +66,7 @@ public class RegistrationPage {
 		wait.until(ExpectedConditions.visibilityOf(name));
 		this.name.sendKeys("edwardgomez");
 		wait.until(ExpectedConditions.visibilityOf(address));
-		this.address.sendKeys("Guatemala zona 13");
+		this.address.sendKeys("Zona13");
 		wait.until(ExpectedConditions.visibilityOf(selectCountry));
 		Select select=new Select(this.selectCountry);
 		select.selectByIndex(2);
@@ -88,9 +88,10 @@ public class RegistrationPage {
 		wait.until(ExpectedConditions.visibilityOf(this.about));
 		this.about.sendKeys("Curso BDG");
 		
+		principal.Utilities.TakeScreenshot(this.driver, "registration");
 		wait.until(ExpectedConditions.visibilityOf(this.btnRegister));
 		this.btnRegister.click();
-			
+		
 		return true;
 	}
 	
