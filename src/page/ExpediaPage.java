@@ -40,7 +40,7 @@ public class ExpediaPage {
 	WebElement close;
 	
 	@FindBy(how = How.ID, using = "hotel-add-car-checkbox-hp-hotel")
-	WebElement addCar;  //  //*[@id="hotel-add-car-checkbox-hp-hotel"]
+	WebElement addCar;  
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"gcw-hotel-form-hp-hotel\"]/div[9]/label/button")
 	WebElement btnSearch;
