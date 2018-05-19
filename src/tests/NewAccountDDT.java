@@ -1,17 +1,16 @@
 package tests;
 
-import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-
+import app.Endpoints;
 import entities.Account;
 
 @RunWith(value = Parameterized.class)
-public class NewAccountDDT {
+public class NewAccountDDT extends BaseTest{
 
 	Account cuenta;
 	// El constructor le pasara los parametros al test method
@@ -21,6 +20,7 @@ public class NewAccountDDT {
 	public NewAccountDDT(String name, String email, String phone, String gender, String password, String verifyPassword,
 			String country, String weeklyEmail, String monthlyEmail, String occasionalEmail)
 	{
+		super(Endpoints.NewAccount,"chrome");
 		cuenta = new Account();
 		this.cuenta.setName(name);
 		this.cuenta.setEmail(email);
@@ -37,7 +37,9 @@ public class NewAccountDDT {
 	@Test
 	public void newAccountTest()
 	{
-		System.out.println(this.cuenta.print());
+		//System.out.println(this.cuenta.print());
+		page.AccountPage obj = new page.AccountPage(this.getDriver());
+		obj.newAccount(this.cuenta);
 	}
 	
 	// Este método es designado a pasar los parámetros dentro de la clase vía constructor
