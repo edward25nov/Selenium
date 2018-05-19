@@ -11,7 +11,7 @@ public class DataReaders {
 	
 	public static List<String[]> getCsv(String filename)
 	{
-		String path = getPath(filename);
+		String path = getPath("data\\"+filename);
 		List<String[]> data = new ArrayList<String[]>();
 		String row;
 		try 
@@ -37,7 +37,7 @@ public class DataReaders {
 	public static String getPath(String filename) 
 	{
 		File currDir = new File("");
-	    String path = currDir.getAbsolutePath() + "\\src\\data\\" + filename;
+	    String path = currDir.getAbsolutePath() + "\\src\\" + filename;
 		return path;
 	}
 	
@@ -45,7 +45,7 @@ public class DataReaders {
 	public static void readCsv(String filename) 
 	{
 		
-		String path = getPath(filename);
+		String path = getPath("data\\"+filename);
 		System.out.println(path);
 		List<String[]> records = getCsv(path);
 		for(String[] record: records) 

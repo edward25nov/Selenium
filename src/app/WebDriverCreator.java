@@ -11,8 +11,8 @@ public class WebDriverCreator {
 	{
 		// Estamos asignando al Driver la propiedad de ruta
 		// webdriver.chrome.driver
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Edward\\Documents\\AutomationTest\\Software\\Selenium\\chromedriver.exe");
+		String path = DataReaders.getPath("libraries\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",path);
 		return new ChromeDriver();
 	}
 	
@@ -20,8 +20,8 @@ public class WebDriverCreator {
 	{
 		// Estamos asignando al Driver la propiedad de ruta
 		// webdriver.gecko.driver
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\Users\\Edward\\Documents\\AutomationTest\\Software\\Selenium\\geckodriver.exe");
+		String path = DataReaders.getPath("libraries\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver",path);
 		return new FirefoxDriver();
 	}
 	
