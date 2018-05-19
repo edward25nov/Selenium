@@ -16,4 +16,6 @@ public class Endpoints {
 	
 	public static String AccountManagement = "http://sdettraining.com/trguitransactions/AccountManagement.aspx";
 	public static String NewAccount = "http://sdettraining.com/trguitransactions/NewAccount.aspx";
+	
+	public static String expedia = "https://www.expedia.com/";
 }
