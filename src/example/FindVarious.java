@@ -10,7 +10,7 @@ import app.WebDriverCreator;
 
 //// el objetivo de esta clase es ejemplificar las formas de búsqueda de un elemento web
 //// por ser ejemplo esta clase tiene código repetido y debe ser llamado desde el metodo static main
-public class findVarious{
+public class FindVarious{
 	
 
 	public static void findbyName() 

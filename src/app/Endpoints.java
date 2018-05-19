@@ -14,6 +14,6 @@ public class Endpoints {
 	public static String login = "http://testing.todvachev.com/test-scenarios/login-form/";
 	public static String Registration = "http://testing.todvachev.com/test-scenarios/register-form/";
 	
-	public static String training = "http://sdettraining.com/trguitransactions/AccountManagement.aspx";
-	
+	public static String AccountManagement = "http://sdettraining.com/trguitransactions/AccountManagement.aspx";
+	public static String NewAccount = "http://sdettraining.com/trguitransactions/NewAccount.aspx";
 }
