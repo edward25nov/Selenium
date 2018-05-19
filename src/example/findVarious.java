@@ -1,26 +1,18 @@
-/**
- * 
- */
-package principal;
+package example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
-/**
- * @author Edward
- *
- */
-public class Training {
+import app.Endpoints;
+import app.WebDriverCreator;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		CasesVarious.caseCombobox();
-	}
+//// el objetivo de esta clase es ejemplificar las formas de búsqueda de un elemento web
+//// por ser ejemplo esta clase tiene código repetido y debe ser llamado desde el metodo static main
+public class findVarious{
 	
+
 	public static void findbyName() 
 	{
 		WebDriver _driver = WebDriverCreator.getChromeDriver();
@@ -133,5 +125,23 @@ public class Training {
 		_driver.close();
 		_driver.quit();
 	}
+
 	
+	public static void caseCombobox() 
+	{
+		WebDriver _driver = WebDriverCreator.getChromeDriver();
+		// trasladarte a la url
+		_driver.navigate().to(Endpoints.combobox);
+		//new Select(_driver.findElement(By.name("DropDownTest"))).selectByVisibleText("Audi");
+		new Select(_driver.findElement(By.name("DropDownTest"))).selectByVisibleText("Audi");
+		try {
+			Thread.sleep(2000); // importante .. 
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		_driver.close();
+		_driver.quit();
+	}
 }

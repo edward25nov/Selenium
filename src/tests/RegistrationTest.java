@@ -1,8 +1,10 @@
 package tests;
 
 import org.junit.Test;
+
+import app.Endpoints;
+
 import org.junit.Assert;
-import principal.Endpoints;
 
 public class RegistrationTest extends BaseTest{
 

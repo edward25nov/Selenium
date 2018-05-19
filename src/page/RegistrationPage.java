@@ -88,7 +88,7 @@ public class RegistrationPage {
 		wait.until(ExpectedConditions.visibilityOf(this.about));
 		this.about.sendKeys("Curso BDG");
 		
-		principal.Utilities.TakeScreenshot(this.driver, "registration");
+		app.Utilities.TakeScreenshot(this.driver, "registration");
 		wait.until(ExpectedConditions.visibilityOf(this.btnRegister));
 		this.btnRegister.click();
 		

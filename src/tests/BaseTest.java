@@ -1,11 +1,11 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
+
+import app.WebDriverCreator;
+
 import org.junit.After;
 import org.junit.Before;
-
-
-import principal.WebDriverCreator;
 
 public class BaseTest {
 	private String url;

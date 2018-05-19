@@ -2,7 +2,7 @@ package tests;
 
 import org.junit.Test;
 
-import principal.Endpoints;
+import app.Endpoints;
 
 import org.junit.Assert;
 
